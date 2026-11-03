@@ -1,6 +1,23 @@
 # QR Studio
 
+[![Release](https://img.shields.io/github/v/release/Floran-grmxx/QR-Studio)](https://github.com/Floran-grmxx/QR-Studio/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Application Android pour **tout transformer en QR code** (lien, texte, Wi-Fi, contact, e-mail, SMS, téléphone, localisation, fichier/image) et les **scanner** avec un lecteur intégré.
+
+## Captures
+
+<p align="center">
+  <img src="docs/screenshots/01-create.png" width="200" alt="Formulaire de création (Wi-Fi)">
+  <img src="docs/screenshots/02-generated-qr.png" width="200" alt="QR code généré">
+  <img src="docs/screenshots/03-scanner.jpg" width="200" alt="Lecteur caméra">
+  <img src="docs/screenshots/04-history.png" width="200" alt="Historique">
+</p>
+
+## Télécharger
+
+📦 [Dernier APK](https://github.com/Floran-grmxx/QR-Studio/releases/latest) (Android 8.0+)
+
+🔄 **Mises à jour automatiques** via [Obtainium](https://github.com/ImranR98/Obtainium) : ajouter l'URL `https://github.com/Floran-grmxx/QR-Studio` dans l'app — elle installe l'APK et propose chaque nouvelle release.
 
 ## Fonctionnalités
 
