@@ -46,9 +46,9 @@
 
 ## ⏳ Reste à faire
 - [ ] **Tester l'APK signé v1.0 sur appareil réel** : installer depuis https://github.com/Gourmaxx/QR-Studio/releases/latest/download/QR-Studio.apk
-- [ ] Lancer les tests unitaires (`./gradlew testReleaseUnitTest` ou `testDebugUnitTest`) — faisable sur la VM macOS via JBR
+- [x] Tests unitaires lancés (`testDebugUnitTest`) : 33 tests verts (2026-11-25)
 - [ ] Tester sur appareil réel : scan caméra (zoom/focus/vibration), connexion WiFi (Android 11+), enregistrement galerie (Android ≤9 = demande de permission), widget (épingler une entrée puis poser le widget), shortcut Scanner, export/import d'historique entre deux appareils
-- [ ] Vérifier que l'écran Créer tient toujours sans scroll sur petit écran (la rangée « Couleur du QR » ajoute ~36 dp) — sinon réduire les pastilles ou les fusionner avec la ligne logo
+- [x] Écran Créer sur petit écran (360×640 dp simulé sur le Redmi via `wm size 1080x1920`) : le bouton « Générer » était coupé par la barre du bas → espacement vertical des puces de type ramené à 0 dp (elles ont déjà 8 dp de marge tactile) ; tient sans scroll (2026-11-25, installé sur le Redmi, non publié en release)
 - [ ] (Optionnel) Icône PNG 512×512 pour la fiche Play Store
 
 ## 📋 Notes / gotchas

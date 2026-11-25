@@ -56,7 +56,9 @@ internal fun CategoryGrid(selected: QrType, onSelect: (QrType) -> Unit) {
     FlowRow(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        // Chips already carry an 8 dp touch-target margin above and below, so extra
+        // row spacing only pushes the Generate button off small (360x640 dp) screens.
+        verticalArrangement = Arrangement.spacedBy(0.dp)
     ) {
         CATEGORY_ORDER.forEach { type ->
             FilterChip(
