@@ -12,3 +12,6 @@ local.properties
 *.jks
 keystore.properties
 .kotlin/
+
+# Local copies of on-device history (personal data)
+backups/

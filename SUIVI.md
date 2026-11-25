@@ -1,7 +1,7 @@
 # SUIVI — QR Studio
 
 ## 🧭 Ligne directrice
-> **MàJ : 2026-11-25** — App Android « QR Studio » : tout transformer en QR code + lecteur caméra + historique. **v1.1 publiée** (date abrégée `jj/mm/aa hh:mm` dans l'historique, capture refaite), APK : https://github.com/Floran-grmxx/QR-Studio/releases/latest/download/QR-Studio.apk . Prochaine priorité : installer la v1.1 release sur le Redmi (désinstaller d'abord la version debug, signature différente).
+> **MàJ : 2026-11-25** — App Android « QR Studio » : tout transformer en QR code + lecteur caméra + historique. **v1.1 publiée** (date abrégée `jj/mm/aa hh:mm` dans l'historique, capture refaite), APK : https://github.com/Floran-grmxx/QR-Studio/releases/latest/download/QR-Studio.apk . v1.1 release installée sur le Redmi (2026-11-25, la debug désinstallée ; historique sauvegardé dans `backups/` et copié dans Téléchargements/qrstudio-historique.json pour réimport). Prochaine priorité : à définir.
 
 ## ✅ Fait
 - [x] Cadrage technique (versions alignées sur AlcoLimit : AGP 9.1.1, Kotlin 2.1.20, Gradle 9.3.1, Compose BOM 2025.01.00, compileSdk 36, minSdk 26, Java 17)
