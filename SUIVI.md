@@ -1,7 +1,7 @@
 # SUIVI — QR Studio
 
 ## 🧭 Ligne directrice
-> **MàJ : 2026-06-17** — App Android « QR Studio » : tout transformer en QR code + lecteur caméra + historique. **État : v1.0 signée et PUBLIÉE en GitHub Release — APK téléchargeable directement : https://github.com/Gourmaxx/QR-Studio/releases/latest/download/QR-Studio.apk . Fait notable : la VM macOS COMPILE (JDK = JBR d'Android Studio, voir gotchas) — l'hypothèse « Java/Gradle absents sur macOS » était fausse.** Prochaine priorité : **tester l'APK signé sur appareil réel** (installer depuis le lien release), puis bumper `versionCode`/`versionName` pour les mises à jour suivantes.
+> **MàJ : 2026-11-25** — App Android « QR Studio » : tout transformer en QR code + lecteur caméra + historique. **v1.1 publiée** (date abrégée `jj/mm/aa hh:mm` dans l'historique, capture refaite), APK : https://github.com/Floran-grmxx/QR-Studio/releases/latest/download/QR-Studio.apk . Prochaine priorité : installer la v1.1 release sur le Redmi (désinstaller d'abord la version debug, signature différente).
 
 ## ✅ Fait
 - [x] Cadrage technique (versions alignées sur AlcoLimit : AGP 9.1.1, Kotlin 2.1.20, Gradle 9.3.1, Compose BOM 2025.01.00, compileSdk 36, minSdk 26, Java 17)
@@ -41,6 +41,8 @@
   - [x] `.gitignore` : exclusion `keystore.properties`, `*.jks`, `*.keystore`.
   - [x] Build `:app:assembleRelease` OK sur la VM macOS (JBR Android Studio) → APK signé V2 (2,44 Mo) vérifié `apksigner`.
   - [x] GitHub Release `v1.0` publiée (repo public `Gourmaxx/QR-Studio`) avec l'asset `QR-Studio.apk` (nom sans version → lien `latest` permanent).
+- [x] Release v1.1 (versionCode 2) publiée, capture `04-history.png` refaite (émulateur, historique de démo poussé via `run-as`)
+- [x] Historique : date abrégée `jj/mm/aa hh:mm` dans chaque ligne (la date complète était coupée) ; la fiche détaillée garde la date longue (2026-11-24)
 
 ## ⏳ Reste à faire
 - [ ] **Tester l'APK signé v1.0 sur appareil réel** : installer depuis https://github.com/Gourmaxx/QR-Studio/releases/latest/download/QR-Studio.apk

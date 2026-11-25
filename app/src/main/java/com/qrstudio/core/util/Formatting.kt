@@ -16,6 +16,15 @@ object Formatting {
             .atZone(ZoneId.systemDefault())
             .format(dateTime)
 
+    private val shortDateTime: DateTimeFormatter =
+        DateTimeFormatter.ofPattern("dd/MM/yy HH:mm", Locale.FRENCH)
+
+    /** Compact form for list rows, where the full date gets cut off: "24/11/26 20:15". */
+    fun shortTimestamp(millis: Long): String =
+        Instant.ofEpochMilli(millis)
+            .atZone(ZoneId.systemDefault())
+            .format(shortDateTime)
+
     fun fileSize(bytes: Int): String =
         if (bytes < 1024) "$bytes o"
         else String.format(Locale.FRANCE, "%.1f Ko", bytes / 1024.0)

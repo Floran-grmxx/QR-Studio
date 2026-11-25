@@ -271,7 +271,7 @@ private fun HistoryRow(
                 )
                 Text(
                     text = "${item.type.frenchLabel} • ${item.origin.frenchLabel} • " +
-                        Formatting.timestamp(item.timestamp),
+                        Formatting.shortTimestamp(item.timestamp),
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     maxLines = 1,
